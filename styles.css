@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+*{
+	padding:0;
+	margin:0;
+}
+.header{
+	display:flex;
+	justify-content:space-between;
+	padding-inline:20px;
+	background-color:yellow;
+	align-items:center;
+	padding:20px;
+}
+.links{
+	display:flex;
+	gap:10px;
+}
+.slide{
+	position:absolute;
+	right:-100px;
+	background-color:blue;
+	display:flex;
+	flex-direction:column;
+	padding:10px;
+	transition: all .5s;
+}
+.slide[active="true"]{
+	right:0px;
+}
